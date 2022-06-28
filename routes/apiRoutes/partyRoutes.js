@@ -37,7 +37,7 @@ db.query(sql, params, (err, row) => {
 
 // delete a party
 router.delete('/party/:id', (req, res) => {
-    const sql = `DELETE FROM partiers WHERE id = ?`;
+    const sql = `DELETE FROM parties WHERE id = ?`;
     const params = [req.params.id];
 
 db.query(sql, params, (err, result) => {
